@@ -1,7 +1,6 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-int num;
 
 struct Promedio{
 	
@@ -50,8 +49,12 @@ int main(){
 	cout<<"Curso:    "<<alumno1.curso <<endl;
 	cout<<"Promedio: "<<promedio_alumno<<endl;
 
-
-
+    if (promedio_alumno > 59.99999999)
+		{cout<<"El alumno ha aprobado la materia";
+		}
+	else
+		cout<<"El alumno ha desaprobado la materia";
+	
 	
 	getch();
 	return 0;
